@@ -1,0 +1,4 @@
+rawdata_annual.xlsx filter=lfs diff=lfs merge=lfs -text
+rawdata_quarterly.xlsx filter=lfs diff=lfs merge=lfs -text
+ownership.xlsm filter=lfs diff=lfs merge=lfs -text
+ownership_insider.xlsm filter=lfs diff=lfs merge=lfs -text
