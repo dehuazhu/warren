@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 import time
 import requests, pandas, lxml
 from lxml import html
+from pdb import set_trace
 
 
 def format_date(date_datetime):
@@ -74,6 +75,8 @@ def get_last_price_yahoo(symbol):
 
 
 if __name__ == '__main__':
-    price = get_last_price_yahoo('ROG.SW')
-    # pandas.set_option('display.max_columns', None)
-    import pdb; pdb.set_trace()
+    # price = get_last_price_yahoo('ROG.SW')
+    # pandas.set_option('display.max_columns', None
+    price = get_price_history_yahoo('PSTG',1000)
+    set_trace()
+
