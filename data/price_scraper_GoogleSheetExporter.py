@@ -5,7 +5,7 @@ from pdb import set_trace
 import argparse
 
 
-def exportToGoogleSheet(url, ticker, days):
+def exportToGoogleSheet(url, days, ticker = 'PSTG'):
     worksheet = getGoogleWorksheet(url)
     price = get_price_history_yahoo(ticker,1000)
     insertData(worksheet, price)
@@ -57,6 +57,6 @@ if __name__ == '__main__':
 
     exportToGoogleSheet(
             url = url,
+            days = days,
             ticker = ticker,
-            days = days
             )
